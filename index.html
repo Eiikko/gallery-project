@@ -13,45 +13,85 @@
 <body>
 	<header>
 		<div class="nav">
-<!-- logo -->
-			<div class="nav-header">
+<!---------- logo ----------------------------->
+			<!-- <div class="nav-header">
 				<div class="nav-title">
 					MyPhoto
 				</div>
-			</div>
-<!-- nav burger -->
-			<div class="nav-btn">
+			</div> -->
+<!--------- nav burger -------------------------->
+			<!-- <div class="nav-btn">
 				<label for="nav-check">
 					<span></span>
 					<span></span>
 					<span></span>
 				</label>
 			</div>
-			<input type="checkbox" id="nav-check">
-<!-- main nav -->
-			<div class="nav-links">
+			<input type="checkbox" id="nav-check"> -->
+<!--------- main nav ------------------------>
+			<!-- <div class="nav-links">
 				<a href="#portfolio">portfolio</a>
 				<a href="#about">about</a>
 				<a href="#contacts">contacts</a>
 			</div>
-		</div>
+		</div> -->
+		<!-- <div class="hero-text">
+			<h1>"i'm looking for the unexpected"</h1>
+		</div> -->
+
+
+		<!-- <div class="nav"> -->
+				<!---------- logo ----------------------------->
+							<!-- <div class="nav-header">
+								<div class="nav-title">
+									MyPhoto
+								</div>
+							</div> -->
+				<!--------- nav burger -------------------------->
+							<nav class="main-nav">
+								<ul class="nav-btn">
+									<label for="nav-check">
+										<span></span>
+										<span></span>
+										<span></span>
+									</label>
+								</ul>
+								<input type="checkbox" id="nav-check">
+					<!--------- main nav ------------------------>
+								<ul class="nav-links">
+									<li>
+										<a href="#portfolio">portfolio</a>
+									</li>
+									<li>
+										<a href="#about">about</a>
+									</li>
+									<li>
+										<a href="#contacts">contacts</a>
+									</li>
+								</ul>
+							</nav>
+						<!-- </div> -->
 	</header>
-<!-- portfolio nav bar -->
+
+<!---------- portfolio nav bar ---------------------->
+
 	<div class="gallery-nav nav">
-		<div class="nav-header">
+		<div id="portfolio" class="nav-header">
 			<div class="nav-title">
 				portfolio
 			</div>
 		</div>
 		<div class="nav-links">
 			<a href="#things">landscapes</a>
-			<a href="#equine">equine</a>
+			<a href="#various">various</a>
 			<a href="#people">people</a>
 			<a href="#equine">equine</a>
-			<a href="#equine">various</a>
+			<a href="#conceptual">conceptual</a>
 		</div>
 	</div>
-<!-- gallery  make them clickable with some kind of bigger preview carousel?-->
+	
+<!---------- gallery  make them clickable with some kind of bigger preview JS?-->
+
 	<div class="centered gallery-container">
 		<img src="assets/img/1.jpg">
 		<img src="assets/img/2.jpg">
@@ -68,38 +108,50 @@
 		<img src="assets/img/5.jpg">
 		<img src="assets/img/6.jpg">
 		<img src="assets/img/7.jpg">
+		<img src="assets/img/1.jpg">
 	</div>
 
-	<!-- about me 1 photo +paragraph and its title-->
+<!-- ABOUT  1 photo +paragraph and its title------------------>
+
 	<div id="about" class="container centered">
 		<div class="column">
 			<div class="my-photo">
-				<img src="assets/img/8.jpg" width="300" height="400">
+				<img src="assets/img/photo1.jpg" width="300" height="300">
 			</div>
 		</div>
 		<div class="column">
 			<div>
 				<div class="section-heading">
-					about me
+					<h3>about me</h3>
 				</div>
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 					nisi."
-				</p>
+					</p>
 			</div>
 		</div>
 	</div>
 
 
-	<!-- contact  form with a map?-->
+<!---------- CONTACT  form ----------------->
 
+	<div id="contact" class="container centered">
+		<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+				Name:<br>
+			<input type="text" name="name"><br>
+				E-mail:<br>
+			<input type="text" name="mail"><br>
+				Comment:<br>
+			<input type="text" name="comment" size="50"><br><br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+		</form>
+	</div>
 
-
-
-
-	<!-- footer -->
-	<footer class="contact-container">
+<!--------------- footer with icons and social and copyright and ?map??? ------->
+	<footer class="footer-container">
 		<div>
 
 		</div>
